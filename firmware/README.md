@@ -237,12 +237,6 @@ Do not commit Wi-Fi passwords or other credentials to the repository. Configure 
 - ESP32 development board with OV2640 camera
 - PSRAM enabled and available
 
-### Activate ESP-IDF
-
-```bash
-. ~/esp/esp-idf/export.sh
-```
-
 ### Navigate to the project
 
 ```bash
@@ -264,6 +258,13 @@ idf.py menuconfig
 The partition table must provide sufficient space for the application. This project uses the **Single factory app (large), no OTA** partition layout.
 
 Check that the camera and PSRAM configuration is appropriate for the board.
+
+
+### Activate ESP-IDF
+
+```bash
+. ~/esp/esp-idf/export.sh
+```
 
 ### Build
 

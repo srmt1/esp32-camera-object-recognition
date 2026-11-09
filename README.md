@@ -201,6 +201,22 @@ Install ESP-IDF and activate the environment:
 . ~/esp/esp-idf/export.sh
 ```
 
+### ESP-IDF Configuration
+
+The firmware requires an ESP32 board with external PSRAM and at least 4 MB of flash.
+
+The project includes `firmware/sdkconfig.defaults`, which configures:
+
+- 4 MB flash
+- Large single-application partition (no OTA)
+- Quad SPI PSRAM
+- PSRAM operating at 40 MHz
+- PSRAM initialisation at startup
+- PSRAM allocation through standard malloc()
+
+When building for the first time, ESP-IDF uses these defaults to generate
+the project's `sdkconfig` configuration.
+
 Build the firmware:
 
 ```bash
