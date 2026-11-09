@@ -1,0 +1,23 @@
+# ESP-IDF generated files
+firmware/build/
+firmware/managed_components/
+firmware/sdkconfig
+firmware/sdkconfig.old
+
+# Local Wi-Fi credentials
+firmware/main/wifi_config.h
+
+# Python virtual environments and generated files
+training/.venv/
+**/__pycache__/
+*.pyc
+
+# Generated training data
+training/processed_dataset/
+
+# Temporary files
+*.swp
+*~
+
+# Temporary test images
+test.jpg

@@ -1,0 +1,24 @@
+# ESP-IDF build output
+build/
+
+# Local configuration and generated settings
+sdkconfig
+sdkconfig.old
+
+# Local Wi-Fi credentials
+main/wifi_config.h
+
+# Managed components (restored by ESP-IDF)
+managed_components/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Temporary files
+*.swp
+*~
+
+# Local test images
+test.jpg

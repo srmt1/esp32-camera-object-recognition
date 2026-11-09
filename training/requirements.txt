@@ -1,0 +1,5 @@
+tensorflow==2.13.1
+numpy<1.25
+Pillow
+matplotlib
+requests
