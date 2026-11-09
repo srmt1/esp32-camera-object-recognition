@@ -193,14 +193,6 @@ http://192.168.4.1/capture
 
 The classifier independently processes captured camera frames on the ESP32.
 
-### Building and Flashing
-
-Install ESP-IDF and activate the environment:
-
-```bash
-. ~/esp/esp-idf/export.sh
-```
-
 ### ESP-IDF Configuration
 
 The firmware requires an ESP32 board with external PSRAM and at least 4 MB of flash.
@@ -216,6 +208,14 @@ The project includes `firmware/sdkconfig.defaults`, which configures:
 
 When building for the first time, ESP-IDF uses these defaults to generate
 the project's `sdkconfig` configuration.
+
+### Building and Flashing
+
+Install ESP-IDF and activate the environment:
+
+```bash
+. ~/esp/esp-idf/export.sh
+```
 
 Build the firmware:
 
